@@ -1,0 +1,275 @@
+<!DOCTYPE html>  <!-- ! + tab -->
+<!-- fontes de pesquisa -->
+<!-- https://gist.github.com/profburnes/9d4d0ae6926e3adb6be7a9f6d1194064 -->
+<!-- https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element -->
+<html lang="pt-br"> <!-- tag para identificar o idioma da página -->
+<!-- todas as tags:  https://www.w3schools.com/tags/default.asp -->
+<head> <!-- cabeçalho onde são incluídos os metadados do documento, como meta tags, css e javascript -->
+    <!-- As tags meta ajudam a descrever o conteúdo da página aos buscadores. Essas são importantes justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para realizar suas buscas, mas elas são uma parte importante -->
+    <meta charset="UTF-8"> 
+    <!-- O charset UTF-8 é o que usamos na web atual e faz parte de um padrão chamado Unicode. A ideia é que com ele possamos representar qualquer caractere de qualquer idioma. Ao usar o charset dentro da tag meta de nosso arquivo estamos dizendo ao navegador: quando for ler esse arquivo, use as regras do charset UTF-8. -->
+
+    <meta name="author" content="Joyce Siqueira"> 
+    <!-- guarda o autor -->
+
+    <meta name="description" content="Página sobre aula">
+    <!-- guarda a descrição do site -->
+
+    <meta name="keywords" content="aula, html">
+    <!-- guarda as palavras-chaves -->
+
+    <meta name="copyright" content="© 2021 UCB" />
+    <!-- declarar os direitos autorais da página -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- A X-UA-Compatiblemeta tag permite que os autores da web escolham em qual versão do Internet Explorer a página deve ser renderizada. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
+
+    <title>Aula 26 de agosto</title> 
+    <!-- titulo da página -->
+
+</head>
+<body> <!-- corpo da página, todo conteúdo deve ser inserido dentro desta tag  -->
+
+    <h1> AULA DE HTML - 26 DE AGOSTO </h1>
+
+    <h2>Títulos e formatação de textos </h2> 
+    
+    <h3>Parágrafos e quebra de linha</h3>
+    <p>My first <br> paragraph.</p> <br>
+
+    <p title="Informações adicionais sobre o texto">Este é o meu parágrafo.</p><br>
+
+    <hr> <!-- linha horizontal -->
+
+    <pre> <!-- mantém espaços e quebras de linhas -->
+
+        Todos estes que aí estão
+
+        Atravancando o meu caminho,
+
+        Eles passarão.
+
+        Eu passarinho!
+    </pre>
+
+    <hr> <!-- linha horizontal -->
+
+    <h2>Formatação de texto</h2> 
+
+    <b> - Bold text </b> <br>
+    <strong> - Important text </strong> <br> 
+    <i> - Italic text </i> <br>
+    <em> - Emphasized text </em>  <br>
+    <mark> - Marked text </mark> <br>
+    <small> - Smaller text </small> <br>
+    <del> - Deleted text </del> <br>
+    <ins> - Inserted text </ins> <br>
+    <sub> - Subscript text </sub> <br>
+    <sup> - Superscript text </sup> <br>
+    
+    <h2> Citações </h2>
+
+    <p>Here is a quote from WWF's website:</p>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature.
+    The world's leading conservation organization,
+    WWF works in 100 countries and is supported by
+    1.2 million members in the United States and
+    close to 5 million globally.
+    </blockquote>
+
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <hr> <!-- linha horizontal -->
+
+    <h2>Links</h2> 
+    <a href="https://www.w3schools.com">Visit W3Schools</a><br>
+    <hr>
+    <a href="new.html">New page</a><br>
+    <hr>
+
+    <h2>Imagens</h2> 
+    <img src="images/frontend.png" alt="Desenvolvedor usando a regua para medir as distâncias nas página web" width="50%" height="50%" border="5"> <br>
+    <img src="images/acessibilidade.jpeg" alt="Meme de acessibilidade" width="50%" height="50%" border="5"> <br>
+    <img src="https://miro.medium.com/max/820/1*Y4Td-XMRtuFAW_8CpO7KyA.png" alt="Três pessoas segurando os símbolos do HTML, CSS e javascript" width="50%" height="50%" border="5"> <br>
+
+    <h1> Mídias </h1>
+    <!-- midias - https://www.w3schools.com/html/html_media.asp-->
+
+    <h2>Vídeos</h2>
+    <!-- https://www.w3schools.com/html/html5_video.asp -->
+    <!-- O controls  adiciona controles de vídeo, como reprodução, pausa e volume.
+    É uma boa ideia sempre incluir width e height . Se a altura e a largura não forem definidas, a página pode piscar enquanto o vídeo carrega.
+    O <source> permite que você especifique arquivos de vídeo alternativos que o navegador pode escolher. O navegador usará o primeiro formato reconhecido.
+    O texto entre as tags <video> e </video> só será exibido em navegadores que não suportam o <video>. -->
+    <video width="320" height="240" controls>
+        <source src="videos/sobrinho.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Reproduzindo vídeo do YouTube</h3>
+    <!-- https://www.w3schools.com/html/html_youtube.asp -->
+    <iframe width="420" height="315"
+        src="https://www.youtube.com/watch?v=rY0WxgSXdEE">
+    </iframe>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="audios/testando.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+     </audio>
+
+    <h2>Tabelas</h2>
+    <h3> Tabela horizontal </h3>
+        <table>
+            <tr> <!-- linhas da tabela -->
+            <th>Company</th> <!-- th: cabeçalho da tabela -->
+            <th>Contact</th>
+            <th>Country</th>
+            </tr>
+            <tr>
+            <td>Alfreds Futterkiste</td> <!-- td: dados da tabela -->
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            </tr>
+            <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            </tr>
+        </table>
+      <h3> Tabela vertical </h3>
+        <table>
+            <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+            </tr>
+            <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+            </tr>
+            <tr>
+            <th>Age</th>
+            <td>94</td>
+            <td>50</td>
+            </tr>
+        </table>
+
+    <h3>Tabela com multiplas colunas </h3>
+        <table>
+            <tr>
+              <th colspan="2">Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </table>
+    <h3>Tabela com múltiplas linhas</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>555-1234</td>
+            </tr>
+                <tr>
+                <td>555-8745</td>
+            </tr>
+        </table>
+
+    <h2>Listas</h2>  
+    <h3>Listas não ordenadas</h3>  
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+    
+    <h3>Listas ordenadas</h3>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    
+    <h3>Listas de descrição</h3>
+        <dl> <!-- dl: define a lista de descrição -->
+            <dt>Coffee</dt> <!-- dt: define o termo -->
+            <dd>- black hot drink</dd> <!-- dd: descreve o termo -->
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+    
+    <h2>Blocs div</h2>
+    <!-- https://www.w3schools.com/html/html_blocks.asp -->
+    <!-- O <div> é freqüentemente usado como um contêiner para outros elementos HTML. O <div>  não tem atributos obrigatórios, mas style, classe idsão comuns. Quando usado junto com CSS, o <div> pode ser usado para estilizar blocos de conteúdo -->
+    <div>
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+
+    <div>
+        <h2>EUA</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem adipisci dicta assumenda ab iusto eos placeat illo, minus, inventore suscipit ea nesciunt quia, distinctio vel similique quibusdam corporis harum?</p>
+    </div>
+
+
+    <h2>Símbolos</h2>
+      Simbolos:  https://www.w3schools.com/charsets/ref_utf_punctuation.asp
+
+    <hr>
+    <h1>Cascading Style Sheets (CSS)</h1>
+    <!-- é usado para formatar o layout de uma página da web. Com CSS, você pode controlar a cor, a fonte, o tamanho do texto, o espaçamento entre os elementos, como os elementos são posicionados e dispostos, quais imagens ou cores de fundo devem ser usadas, diferentes exibições para diferentes dispositivos e tamanhos de tela e muito mais! -->
+    <h2>Inline</h2>
+    <!-- Inline - usando o style dentro dos elementos HTML -->
+    <p>Um CSS embutido é usado para aplicar um estilo único a um único elemento HTML.</p>
+    <!-- https://www.w3schools.com/css/css_syntax.asp -->
+
+    <h2 style="font-size:60px;">Títulos e formatação de textos - tamanho definido pelo style</h2> <br>
+    <p style="color: brown; text-align: center; font-size: 30px;">Testando CSS inline</p>
+    
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+
+    <div style="background-color:rgb(24, 155, 63);color:white;padding:20px;">
+        <h2>EUA</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem adipisci dicta assumenda ab iusto eos placeat illo, minus, inventore suscipit ea nesciunt quia, distinctio vel similique quibusdam corporis harum?</p>
+    </div>
+
+    <h2> CSS interno </h2>
+    <!-- https://www.w3schools.com/html/html_css.asp -->
+
+</body>
+</html>

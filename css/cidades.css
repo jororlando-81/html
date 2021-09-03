@@ -1,0 +1,21 @@
+.city {
+    background-color: #ff6347;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+  .country {
+    background-color: green;
+    color: black;
+    border: 8px solid black;
+    margin: 10px;
+    padding: 10px;
+  }
+  .novoteste {
+    background-color: yellow;
+    color: black;
+    border: 8px solid black;
+    margin: 10px;
+    padding: 10px;
+  }

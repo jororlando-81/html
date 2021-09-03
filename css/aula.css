@@ -1,0 +1,22 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: rgb(64, 188, 226);
+}
+h3 {
+  color: yellow;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(12, 0, 0);
+  border-collapse: collapse;
+}
+th,
+td {
+  background-color: #70084e;
+}

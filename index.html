@@ -2,7 +2,7 @@
 <!-- fontes de pesquisa -->
 <!-- https://gist.github.com/profburnes/9d4d0ae6926e3adb6be7a9f6d1194064 -->
 <!-- https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element -->
-<html lang="pt-br"> <!-- tag para identificar o idioma da página -->
+<html lang="pt-BR"> <!-- tag para identificar o idioma da página -->
 <!-- todas as tags:  https://www.w3schools.com/tags/default.asp -->
 <head> <!-- cabeçalho onde são incluídos os metadados do documento, como meta tags, css e javascript -->
     <!-- As tags meta ajudam a descrever o conteúdo da página aos buscadores. Essas são importantes justamente por identificar o site aos buscadores, ajudando no SEO (Search Engine Optimization). O Google não utiliza somente as metas para realizar suas buscas, mas elas são uma parte importante -->
@@ -27,11 +27,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
 
-    <title>Aula 26 de agosto</title> 
+    <!-- <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+        h3   {color: yellow;}
+        table, th, td {
+            border: 1px solid rgb(12, 0, 0);
+            border-collapse: collapse;
+        }
+        th, td {
+            background-color: #70084e;
+        }
+    </style> -->
+    <link rel="stylesheet" href="css/aula.css">
+
+    <title>Aula 27 de agosto</title> 
     <!-- titulo da página -->
 
 </head>
-<body> <!-- corpo da página, todo conteúdo deve ser inserido dentro desta tag  -->
+<body style = "background-color: lightblue"> <!-- corpo da página, todo conteúdo deve ser inserido dentro desta tag  -->
 
     <h1> AULA DE HTML - 27 DE AGOSTO </h1>
 
@@ -40,11 +55,13 @@
     <h3>Parágrafos e quebra de linha</h3>
     <p>My first <br> paragraph.</p> <br>
 
-    <p title="Informações adicionais sobre o texto">Este é o meu parágrafo.</p><br>
+    <p style="color:red;" title="Informações adicionais sobre o texto">Este é o meu parágrafo.</p><br>
 
     <hr> <!-- linha horizontal -->
 
-    <pre> <!-- mantém espaços e quebras de linhas -->
+    <pre style="color:red;"> <!-- mantém espaços e quebras de linhas -->
+
+        <h1>Passarinho</h1>
 
         Todos estes que aí estão
 
@@ -53,6 +70,7 @@
         Eles passarão.
 
         Eu passarinho!
+
     </pre>
 
     <hr> <!-- linha horizontal -->
@@ -101,12 +119,13 @@
     <h2>Links</h2> 
     <a href="https://www.w3schools.com">Visit W3Schools</a><br>
     <hr>
-    <a href="new.html">New page</a><br>
+    <a href="layout.html">New page</a><br>
+    <a href="mailto: joycitta@gmail.com">Email Joyce</a>
     <hr>
-
+lkjlkjlkjl
     <h2>Imagens</h2> 
-    <img src="images/frontend.png" alt="Desenvolvedor usando a regua para medir as distâncias nas página web" width="50%" height="50%" border="5"> <br>
-    <img src="images/acessibilidade.jpeg" alt="Meme de acessibilidade" width="50%" height="50%" border="5"> <br>
+    <img src="images/frontend.png" alt="Desenvolvedor usando a regua para medir as distâncias nas página web" width="30%" height="30%" border="5"> <br>
+    <img src="images/acessibilidade.jpeg" alt="Meme de acessibilidade" width="30%" height="30%" border="5"> <br>
     <img src="https://miro.medium.com/max/820/1*Y4Td-XMRtuFAW_8CpO7KyA.png" alt="Três pessoas segurando os símbolos do HTML, CSS e javascript" width="50%" height="50%" border="5"> <br>
 
     <h1> Mídias </h1>
@@ -121,7 +140,7 @@
     <video width="320" height="240" controls>
         <source src="videos/sobrinho.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
-      Your browser does not support the video tag.
+      Seu video não funcionou!
     </video>
 
     <h3>Reproduzindo vídeo do YouTube</h3>
@@ -141,29 +160,40 @@
     <h3> Tabela horizontal </h3>
 
         <table>
-            <tr> <!-- linhas da tabela -->
+            <tr> <!-- linhas da tabela r - row-->
                 <th>Company</th> <!-- th: cabeçalho da tabela -->
                 <th>Contact</th>
                 <th>Country</th>
                 <th>Telefone</th>
+                <th>nova coluna</th> <!-- titulo da coluna th-->
             </tr>
             <tr>
                 <td>Alfreds Futterkiste</td> <!-- td: dados da tabela -->
                 <td>Maria Anders</td>
                 <td>Germany</td>
                 <td>222222222</td>
+                <td>dado da nova coluna</td>
             </tr>
             <tr>
                 <td>Centro comercial Moctezuma</td>
                 <td>Francisco Chang</td>
                 <td>Mexico</td>
                 <td>333333</td>
+                <td>dado 2</td>
             </tr>
             <tr>
                 <td>Universidade Católica de Brasília</td>
                 <td>Joyce Siqueira</td>
                 <td>Brasil</td>
                 <td>888888888</td>
+                <td>dado 3</td>
+            </tr>
+            <tr>
+                <td>Universidade Federal de Goiás</td>
+                <td>Ana Clara Moreira</td>
+                <td>Brasil</td>
+                <td>8999999</td>
+                <td>dado 4</td>
             </tr>
         </table>
 
@@ -189,6 +219,11 @@
                 <th>Email</th>
                 <td>smith@gmail.com</td>
                 <td>jackson@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Telefone</th>
+                <td>99999</td>
+                <td>6666666</td>
             </tr>
         </table>
 
@@ -249,16 +284,8 @@
     
     <h2>Blocs div</h2>
     <!-- https://www.w3schools.com/html/html_blocks.asp -->
-    <!-- O <div> é freqüentemente usado como um contêiner para outros elementos HTML. O <div>  não tem atributos obrigatórios, mas style, classe idsão comuns. Quando usado junto com CSS, o <div> pode ser usado para estilizar blocos de conteúdo -->
-    <div>
-        <h2>London</h2>
-        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    </div>
-
-    <div>
-        <h2>EUA</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem adipisci dicta assumenda ab iusto eos placeat illo, minus, inventore suscipit ea nesciunt quia, distinctio vel similique quibusdam corporis harum?</p>
-    </div>
+    <!-- O <div> é frequentemente usado como um contêiner para outros elementos HTML. O <div>  não tem atributos obrigatórios, mas style, classe idsão comuns. Quando usado junto com CSS, o <div> pode ser usado para estilizar blocos de conteúdo -->
+   
 
 
     <h2>Símbolos</h2>
@@ -275,6 +302,19 @@
     <h2 style="font-size:60px;">Títulos e formatação de textos - tamanho definido pelo style</h2> <br>
     <p style="color: brown; text-align: center; font-size: 30px;">Testando CSS inline</p>
     
+
+    <div>
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+
+    <div>
+        <h2>EUA</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem adipisci dicta assumenda ab iusto eos placeat illo, minus, inventore suscipit ea nesciunt quia, distinctio vel similique quibusdam corporis harum?</p>
+    </div>
+
+
+
     <div style="background-color:black;color:white;padding:20px;">
         <h2>London</h2>
         <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
@@ -287,6 +327,11 @@
 
     <h2> CSS interno </h2>
     <!-- https://www.w3schools.com/html/html_css.asp -->
+
+
+    <iframe src="links.html" title="Iframe w3schools" width="600" height="200"></iframe>
+
+
 
 </body>
 </html>

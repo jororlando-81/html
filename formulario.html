@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Joyce Siqueira"> 
+    <meta name="description" content="Aula sobre formulários em HTML">
+    <meta name="keywords" content="aula, formulario, html, css, javascript">
+    <link rel="stylesheet" href="css/formulario.css">
+    <script src="js/formulario.js"></script>
+    <title>Aula sobre formulários</title>
 </head>
 <body>
-    
+    <h1>FORMULÁRIO </h1>
+    <form>
+        <label for="lnome">Nome:</label><br> <!-- tag "label" define um rótulo, o atributo "for" idenfica a label -->
+        <input type="text" id="fname" name="fname"><br> <!-- tag "input" define campos de entrada em diferentes formatos. Atributo "type" define o formato-->
+        <!-- Tipos: https://www.w3schools.com/html/html_form_input_types.asp-->
+        <label for="lsenha">Senha:</label><br>
+        <input type="password" id="isenha" name="isenha" required><br>
+        <label for="lemail">E-mail:</label><br>
+        <input type="email" id="iemail" name="iemail"><br>
+        <label for="favcolor">Selecione sua cor favorita:</label><br>
+        <input type="color" id="favcolor" name="favcolor"><br>
+        <label for="quantity">Quantidade (entre 1 e 5):</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label> <br>
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+
+        <textarea name="message">
+            The cat was playing in the garden.
+        </textarea><br>
+
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <input type="submit" class="enviar" onclick="MensagemSubmissao();" value="Submit">
+
+
+
+    </form>
 </body>
 </html>

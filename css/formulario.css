@@ -1,0 +1,53 @@
+body {
+    padding: 0; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    margin: 0; /*define a área de margem nos quatro lados do elemento*/
+}
+
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color: #23bd7d;
+    max-width: 300px; /*largura máxima*/
+}
+
+h1 {
+    margin-bottom: 80px; /*margem superior"*/
+    margin-left: 120px; /*margem esquerda"*/
+    color: #d68925;
+    text-shadow: 5px 5px 5px rgb(182, 176, 176);
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+
+.enviar {
+    background-color: #ffe866;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
